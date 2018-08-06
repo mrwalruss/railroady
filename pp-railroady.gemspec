@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.description  = "Ruby on Rails 3/4/5 model and controller UML class diagram generator. Originally based on the 'railroad' plugin and contributions of many others. (`brew install graphviz` before use!)"
   spec.email        = ['preston.lee@prestonlee.com', 'tcrawley@gmail.com', 'peter@hoeg.com', 'p.hoeg@northwind.sg', 'javier@smaldone.com.ar']
   spec.summary      = 'Ruby on Rails 3/4 model and controller UML class diagram generator.'
-  spec.homepage      = 'http://github.com/preston/railroady'
+  spec.homepage      = 'https://github.com/mrwalruss/railroady'
   spec.license       = 'GPLv2'
 
   spec.files         = `git ls-files`.split("\n")
