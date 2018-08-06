@@ -272,7 +272,7 @@ class ModelsDiagram < AppDiagram
     STDERR.puts "- Processing model association #{assoc.name}" if @options.verbose
 
     # Skip "belongs_to" associations
-    if assoc.macro.defined?
+    if assoc.respond_to?(:macro)
       macro = assoc.macro.to_s
     else
       pattern = {
