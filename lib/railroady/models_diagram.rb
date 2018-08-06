@@ -280,7 +280,8 @@ class ModelsDiagram < AppDiagram
         "EmbedsMany" => "embeds_many",
         "BelongsTo" => "belongs_to",
         "HasOne" => "has_one",
-        "HasMany" => "has_many"
+        "HasMany" => "has_many",
+        "EmbeddedIn" => "belongs_to"
       }
       tmp = assoc.class.to_s.split("::").last.to_s
       macro = pattern[tmp]
