@@ -272,7 +272,19 @@ class ModelsDiagram < AppDiagram
     STDERR.puts "- Processing model association #{assoc.name}" if @options.verbose
 
     # Skip "belongs_to" associations
-    macro = assoc.macro.to_s
+    if assoc.macro.defined?
+      macro = assoc.macro.to_s
+    else
+      pattern = {
+        "EmbedsOne" => "embeds_one",
+        "EmbedsMany" => "embeds_many",
+        "BelongsTo" => "belongs_to",
+        "HasOne" => "has_one",
+        "HasMany" => "has_many"
+      }
+      tmp = assoc.class.to_s.split("::").last.to_s
+      macro = pattern[tmp]
+    end
     return if %w(belongs_to referenced_in).include?(macro) && !@options.show_belongs_to
 
     # Skip "through" associations
