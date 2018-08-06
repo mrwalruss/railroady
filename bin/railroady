@@ -19,7 +19,7 @@
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 require 'railroady'
 
-APP_NAME       = 'railroady'
+APP_NAME       = 'pp-railroady'
 APP_HUMAN_NAME = 'RailRoady'
 # APP_VERSION    = [RailRoady::VERSION::MAJOR, RailRoady::VERSION::MINOR, RailRoady::VERSION::PATCH]
 APP_VERSION    = RailRoady::VERSION

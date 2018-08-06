@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'railroady/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'railroady'
+  spec.name          = 'pp-railroady'
   spec.version       = RailRoady::VERSION
   spec.authors       = ['Preston Lee', 'Tobias Crawley', 'Peter Hoeg', 'Javier Smaldone']
   spec.description  = "Ruby on Rails 3/4/5 model and controller UML class diagram generator. Originally based on the 'railroad' plugin and contributions of many others. (`brew install graphviz` before use!)"
